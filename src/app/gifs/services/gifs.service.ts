@@ -22,8 +22,7 @@ export class GifsService {
     this._historial = JSON.parse(localStorage.getItem('historial')!) || [] ;
     this.resultados = JSON.parse(localStorage.getItem('resultados')!) || [] ;
     console.log(this._resultado);
-    
-
+  
   }
 
   buscarGifs(query: string = '') {

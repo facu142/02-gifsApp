@@ -7,7 +7,12 @@
     <hr class="text-light">
 
     <div class="list-group list-reset">
-      <a *ngFor="let item of historial" href="#" class="list-group-item list-group-action">
+      <a
+      (click)= "buscar(item)" 
+      *ngFor="let item of historial" 
+      href="#" 
+      class="list-group-item list-group-action"
+      >
         {{item |titlecase }}
       </a>  
     </div>
